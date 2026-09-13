@@ -210,7 +210,7 @@ return(
 <div className="left-column">
 <div className="info-card">
 <div className="info-heading"><div className="info-heading-icon">⌖</div><div><h2 className="card-title">Get in Touch</h2><p className="card-subtitle">Reach out to us through any of the following channels.</p></div></div>
-<div className="info-row"><div className="info-icon">☎</div><div><div className="info-main"><a href="tel:+919390642779">+91 9390642779 / 8688110258</a></div><div className="info-detail">Mon - Sat, 9:00 AM - 7:00 PM<br/>Online Support Only</div></div></div>
+<div className="info-row"><div className="info-icon">☎</div><div><div className="info-main"><a href="tel:+919390642779">+91 9390642779</a></div><div className="info-detail">Mon - Sat, 9:00 AM - 7:00 PM<br/>Online Support Only</div></div></div>
 <div className="info-row"><div className="info-icon">✉</div><div><div className="info-main"><a href="mailto:vighnaviacademy@gmail.com">vighnaviacademy@gmail.com</a></div><div className="info-detail">We reply within 24 hours</div></div></div>
 <div className="info-row"><div className="info-icon">●</div><div><div className="info-main">Online Classes Only</div><div className="info-detail">Live interactive online training<br/>Learn from anywhere, anytime.</div></div></div>
 </div>
