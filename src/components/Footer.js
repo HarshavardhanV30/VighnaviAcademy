@@ -94,11 +94,6 @@ Empowering learners to become skilled, confident, and industry-ready developers 
 
 <span style={{fontSize:'21px'}}>☎</span>
 
-<span>
-<strong style={{display:'block',color:'#fff',fontSize:'16px',marginBottom:'2px'}}>Phone 1</strong>
-+91 8688110258
-</span>
-
 </a>
 
 <a href="tel:+919390642779" className="footer-contact footer-phone" style={{display:'flex',gap:'12px',alignItems:'flex-start',color:'#c8d1d5',textDecoration:'none',fontSize:'15px',lineHeight:'1.5',transition:'all .25s ease'}}>
