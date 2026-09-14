@@ -704,9 +704,8 @@ export default function Home() {
         aria-label="Connect with Vighnavi Academy on WhatsApp"
         title="Chat with us on WhatsApp"
       >
-        <span style={styles.whatsappIcon}>◉</span>
+        <span style={styles.whatsappIcon}> 📞</span>
       </button>
-
       <Footer />
     </div>
   );
