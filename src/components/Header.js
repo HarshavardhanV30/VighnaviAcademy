@@ -48,8 +48,8 @@ export default function Header() {
           box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
           display: flex;
           flex-direction: column;
-          padding: 16px 20px 24px;
-          gap: 12px;
+          padding: 20px 24px 28px;
+          gap: 16px;
           z-index: 9999;
           transform: translateY(-10px);
           opacity: 0;
@@ -67,7 +67,7 @@ export default function Header() {
         .mobile-nav-link {
           color: #d1d5db;
           text-decoration: none;
-          font-size: 16px;
+          font-size: 17px;
           font-weight: 600;
           padding: 10px 8px;
           border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -76,7 +76,7 @@ export default function Header() {
 
         .mobile-nav-link:hover, .mobile-nav-link:active {
           color: #00D2C4;
-          padding-left: 12px;
+          padding-left: 10px;
         }
 
         .hamburger-btn {
@@ -86,7 +86,7 @@ export default function Header() {
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 4px;
+          padding: 6px;
           color: #ffffff;
           outline: none;
         }
@@ -96,9 +96,9 @@ export default function Header() {
         style={{
           backgroundColor: '#030812',
           borderBottom: '1px solid rgba(255,255,255,.08)',
-          padding: isMobile ? '6px 14px' : '6px 42px',
+          padding: isMobile ? '6px 18px' : '6px 42px',
           display: 'flex',
-          justify: 'space-between',
+          justifyContent: 'space-between',
           alignItems: 'center',
           position: 'sticky',
           top: 0,
@@ -108,12 +108,12 @@ export default function Header() {
           minHeight: isMobile ? '64px' : '92px',
         }}
       >
-        {/* Logo Section (Reduced size for mobile) */}
-        <Link to="/" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '8px' : '15px', textDecoration: 'none', flexShrink: 0 }}>
+        {/* Logo Section */}
+        <Link to="/" onClick={closeMenu} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
           <div
             className="logo-image"
             style={{
-              width: isMobile ? '130px' : '300px',
+              width: isMobile ? '140px' : '300px',
               height: isMobile ? '50px' : '80px',
               display: 'flex',
               alignItems: 'center',
@@ -128,8 +128,8 @@ export default function Header() {
               src={logo}
               alt="Vighnavi Academy Logo"
               style={{
-                width: isMobile ? '220px' : '210px',
-                height: isMobile ? '220px' : '210px',
+                width: isMobile ? '230px' : '210px',
+                height: isMobile ? '230px' : '210px',
                 maxWidth: 'none',
                 maxHeight: 'none',
                 objectFit: 'cover',
@@ -163,39 +163,42 @@ export default function Header() {
           </div>
         )}
 
-        {/* Right Action Container (CTA + Mobile Hamburger) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '8px' : '12px' }}>
-          <Link
-            to="/contact"
-            onClick={closeMenu}
-            className="cta-button"
-            style={{
-              backgroundColor: '#00D2C4',
-              color: '#000',
-              padding: isMobile ? '8px 12px' : '13px 25px',
-              borderRadius: '28px',
-              textDecoration: 'none',
-              fontWeight: '700',
-              fontSize: isMobile ? '12px' : '16px',
-              display: 'inline-block',
-              transition: 'all .3s ease',
-              whiteSpace: 'nowrap',
-              boxShadow: '0 4px 12px rgba(0,210,196,.18)',
-            }}
-          >
-            Book Consultation&nbsp; →
-          </Link>
+        {/* Right Section */}
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          {/* Desktop CTA Button */}
+          {!isMobile && (
+            <Link
+              to="/contact"
+              onClick={closeMenu}
+              className="cta-button"
+              style={{
+                backgroundColor: '#00D2C4',
+                color: '#000',
+                padding: '13px 25px',
+                borderRadius: '28px',
+                textDecoration: 'none',
+                fontWeight: '700',
+                fontSize: '16px',
+                display: 'inline-block',
+                transition: 'all .3s ease',
+                whiteSpace: 'nowrap',
+                boxShadow: '0 4px 12px rgba(0,210,196,.18)',
+              }}
+            >
+              Book Consultation&nbsp; →
+            </Link>
+          )}
 
-          {/* Hamburger Toggle Button on the Right */}
+          {/* Hamburger Toggle Button (Mobile Only) */}
           {isMobile && (
             <button className="hamburger-btn" onClick={toggleMenu} aria-label="Toggle Navigation Menu">
               {isMenuOpen ? (
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00D2C4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00D2C4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
               ) : (
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="3" y1="12" x2="21" y2="12"></line>
                   <line x1="3" y1="6" x2="21" y2="6"></line>
                   <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -205,7 +208,7 @@ export default function Header() {
           )}
         </div>
 
-        {/* Integrated Dropdown Drawer */}
+        {/* Mobile Dropdown Drawer */}
         {isMobile && (
           <div className={`mobile-drawer ${isMenuOpen ? 'open' : ''}`}>
             <Link to="/" className="mobile-nav-link" onClick={closeMenu}>
@@ -220,6 +223,30 @@ export default function Header() {
             <Link to="/contact" className="mobile-nav-link" onClick={closeMenu}>
               Contact Us
             </Link>
+
+            {/* CTA Button placed inside the mobile drawer */}
+            <div style={{ marginTop: '8px' }}>
+              <Link
+                to="/contact"
+                onClick={closeMenu}
+                className="cta-button"
+                style={{
+                  backgroundColor: '#00D2C4',
+                  color: '#000',
+                  padding: '12px 20px',
+                  borderRadius: '28px',
+                  textDecoration: 'none',
+                  fontWeight: '700',
+                  fontSize: '15px',
+                  display: 'block',
+                  textAlign: 'center',
+                  transition: 'all .3s ease',
+                  boxShadow: '0 4px 12px rgba(0,210,196,.18)',
+                }}
+              >
+                Book Consultation&nbsp; →
+              </Link>
+            </div>
           </div>
         )}
       </nav>
