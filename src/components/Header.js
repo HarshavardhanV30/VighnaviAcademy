@@ -129,7 +129,7 @@ export default function Header() {
               alt="Vighnavi Academy Logo"
               style={{
                 width: isMobile ? '230px' : '210px',
-                height: isMobile ? '230px' : '210px',
+                height: isMobile ? '130px' : '210px',
                 maxWidth: 'none',
                 maxHeight: 'none',
                 objectFit: 'cover',
