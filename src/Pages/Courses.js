@@ -2155,7 +2155,7 @@ const courses = [
       ]
     }
   ]
-}
+},
   {
     title: "Python Full Stack Development",
     image: pythonFullStack,
