@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logovighnaviacademy.png';
+import logo from '../assets/logovighnavisri.png';
 
 export default function Footer() {
   const socialLinks = [
