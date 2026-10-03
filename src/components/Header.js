@@ -37,7 +37,7 @@ export default function Header() {
         .logo-image:hover{transform:scale(1.03)}
         .logo-image img{image-rendering:auto;-webkit-font-smoothing:antialiased}
 
-        /* Mobile Drawer Dropdown Styles */
+        /* Mobile Drawer Dropdowns Styles */
         .mobile-drawer {
           position: absolute;
           top: 100%;
