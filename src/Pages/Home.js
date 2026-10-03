@@ -14,35 +14,32 @@ import genaiLogo from '../assets/genai logo.png';
 import javaSqlLogo from '../assets/java with sql combo.png';
 import pythonSqlLogo from '../assets/python with sql logo.png';
 
+/* Vighnavi Academy Logo Colors */
 const C = {
-  navy: '#020817',
+  dark: '#00035B',
+  navy: '#02083D',
   blue: '#075BFF',
-  brightBlue: '#008CFF',
+  bright: '#008CFF',
   cyan: '#00D9FF',
-  cyanSoft: '#E8FAFF',
-  royal: '#123BCE',
-  silver: '#F4F7FF',
+  gold: '#D9A441',
+  light: '#F3F7FF',
   white: '#FFFFFF',
   text: '#101A35',
-  muted: '#64708A',
-  gold: '#D9A441',
-  goldLight: '#FFF5D6',
-  border: '#DCE5F5',
-  bg: '#F7FAFF',
-  darkBlue: '#061B57',
+  muted: '#66738D',
+  border: '#D9E3F5'
 };
 
 const courses = [
-  ['Java Development', javaLogo, 'Bestseller', 'Master Java programming, OOP concepts and enterprise development with practical projects.', ['Core Java','OOP','Collections','Spring Boot','SQL']],
-  ['Python Development', pythonLogo, 'Popular', 'Build strong Python fundamentals and develop real-world applications with confidence.', ['Python','OOP','Data Structures','Django','Projects']],
-  ['Java Full Stack', javaFullStack, 'Career Track', 'Become a complete full-stack developer with Java, Spring Boot, React and databases.', ['Java','Spring Boot','HTML/CSS','React','MySQL']],
-  ['Python Full Stack', pythonFullStack, 'Trending', 'Learn modern full-stack development using Python, Django, React and databases.', ['Python','Django','React','JavaScript','PostgreSQL']],
-  ['MERN Stack Development', mernStack, 'Full Stack', 'Build scalable web applications using MongoDB, Express, React and Node.js.', ['MongoDB','Express','React','Node.js','Projects']],
-  ['Data Analyst', dataAnalytics, 'In Demand', 'Turn business data into insights and make data-driven decisions using modern tools.', ['Excel','SQL','Python','Power BI','Visualization']],
-  ['Generative AI', genaiLogo, 'New', 'Explore modern Generative AI, LLMs, prompt engineering and intelligent AI applications.', ['AI/ML','Prompt Engineering','LLMs','LangChain','AI Projects']],
-  ['Cloud & DevOps', devops, 'Future Skills', 'Learn cloud technologies, deployment, DevOps practices and production workflows.', ['AWS','Linux','Docker','CI/CD','DevOps']],
-  ['Java with SQL', javaSqlLogo, 'Popular', 'Learn Java programming together with SQL database concepts and practical application development.', ['Core Java','OOP','SQL','MySQL','Projects']],
-  ['Python with SQL', pythonSqlLogo, 'Career Track', 'Build strong Python programming and SQL database skills through practical real-world projects.', ['Python','SQL','MySQL','Data Handling','Projects']]
+  ['Java Development',javaLogo,'Bestseller','Master Java programming, OOP concepts and enterprise development with practical projects.',['Core Java','OOP','Collections','Spring Boot','SQL']],
+  ['Python Development',pythonLogo,'Popular','Build strong Python fundamentals and develop real-world applications with confidence.',['Python','OOP','Data Structures','Django','Projects']],
+  ['Java Full Stack',javaFullStack,'Career Track','Become a complete full-stack developer with Java, Spring Boot, React and databases.',['Java','Spring Boot','HTML/CSS','React','MySQL']],
+  ['Python Full Stack',pythonFullStack,'Trending','Learn modern full-stack development using Python, Django, React and databases.',['Python','Django','React','JavaScript','PostgreSQL']],
+  ['MERN Stack Development',mernStack,'Full Stack','Build scalable web applications using MongoDB, Express, React and Node.js.',['MongoDB','Express','React','Node.js','Projects']],
+  ['Data Analyst',dataAnalytics,'In Demand','Turn business data into insights and make data-driven decisions using modern tools.',['Excel','SQL','Python','Power BI','Visualization']],
+  ['Generative AI',genaiLogo,'New','Explore Generative AI, LLMs, prompt engineering and intelligent AI applications.',['AI/ML','Prompt Engineering','LLMs','LangChain','AI Projects']],
+  ['Cloud & DevOps',devops,'Future Skills','Learn cloud technologies, deployment, DevOps practices and production workflows.',['AWS','Linux','Docker','CI/CD','DevOps']],
+  ['Java with SQL',javaSqlLogo,'Popular','Learn Java programming together with SQL database concepts and practical projects.',['Core Java','OOP','SQL','MySQL','Projects']],
+  ['Python with SQL',pythonSqlLogo,'Career Track','Build strong Python and SQL skills through practical real-world projects.',['Python','SQL','MySQL','Data Handling','Projects']]
 ];
 
 const categories = [
@@ -54,53 +51,66 @@ const categories = [
 
 const features = [
   ['🎓','Industry Expert Trainers','Learn from experienced professionals with practical industry knowledge.'],
-  ['🎥','Live & Recorded Classes','Attend interactive classes and access learning resources whenever you need them.'],
-  ['🛠️','Hands-on Projects','Build practical projects that help you develop job-ready technical skills.'],
-  ['🏆','Career-Focused Learning','Follow structured learning paths designed around real-world career requirements.'],
-  ['📜','Course Certification','Complete your course and showcase your skills with a professional certificate.'],
-  ['💬','Mentor Support','Get guidance, doubt clarification and learning support throughout your journey.']
+  ['🎥','Live & Recorded Classes','Attend interactive classes and access learning resources anytime.'],
+  ['🛠️','Hands-on Projects','Build practical projects that develop job-ready technical skills.'],
+  ['🏆','Career-Focused Learning','Follow structured learning paths based on industry requirements.'],
+  ['📜','Course Certification','Complete your course and showcase your technical skills.'],
+  ['💬','Mentor Support','Get guidance, doubt clarification and learning support.']
 ];
 
-const whyChooseUs = [
-  ['🎯','Job-Oriented Curriculum','Learn technologies and practical skills aligned with current industry requirements.'],
+const why = [
+  ['🎯','Job-Oriented Curriculum','Learn technologies and skills aligned with current industry requirements.'],
   ['👨‍💻','Practical Training','Build applications and projects instead of depending only on theory.'],
-  ['🧑‍🏫','Expert Mentorship','Get continuous guidance from trainers who help you understand concepts clearly.'],
-  ['💼','Career Preparation','Prepare for technical interviews, projects, resumes and real-world development.'],
-  ['🚀','Real-World Projects','Develop portfolio-ready projects that demonstrate your technical capabilities.'],
-  ['🤝','Personalized Support','Get help with doubts, assignments, projects and your overall learning journey.']
+  ['🧑‍🏫','Expert Mentorship','Get continuous guidance from experienced trainers.'],
+  ['💼','Career Preparation','Prepare for interviews, projects, resumes and real-world development.'],
+  ['🚀','Real-World Projects','Develop portfolio-ready projects that demonstrate your skills.'],
+  ['🤝','Personalized Support','Get help with doubts, assignments and projects.']
 ];
 
 const testimonials = [
-  ['Rahul K.','Software Developer','The practical teaching approach helped me understand programming concepts much faster. The projects were extremely useful.'],
-  ['Divya S.','Data Analyst','The Python and Data Analytics training gave me confidence to work with real-world datasets and build my portfolio.'],
-  ['Suresh M.','Full Stack Developer','The trainers explain every topic clearly and provide excellent project guidance. A great place to start a tech career.']
+  ['Rahul K.','Software Developer','The practical teaching approach helped me understand programming concepts much faster.'],
+  ['Divya S.','Data Analyst','The Python and Data Analytics training gave me confidence with real-world datasets.'],
+  ['Suresh M.','Full Stack Developer','The trainers explain every topic clearly and provide excellent project guidance.']
 ];
 
-const button = {
-  border: 'none', borderRadius: 30, padding: '14px 26px',
-  fontWeight: 800, fontSize: 15, cursor: 'pointer'
-};
+const Btn = ({children,onClick,outline=false}) => (
+  <button className="btn" onClick={onClick} style={{
+    border:outline?`1px solid ${C.blue}`:'none',background:outline?C.white:C.blue,
+    color:outline?C.dark:C.white,padding:'13px 25px',borderRadius:28,
+    fontWeight:800,fontSize:14,cursor:'pointer'
+  }}>{children}</button>
+);
+
+const SectionTitle = ({label,title,sub}) => (
+  <div style={{textAlign:'center',maxWidth:850,margin:'0 auto 42px'}}>
+    <small style={{color:C.blue,letterSpacing:3,fontWeight:900}}>{label}</small>
+    <h2 className="title" style={{color:C.dark,margin:'9px 0',fontFamily:'Georgia,serif'}}>{title}</h2>
+    {sub&&<p style={{color:C.muted,lineHeight:1.6,margin:0}}>{sub}</p>}
+  </div>
+);
 
 export default function Home() {
   const navigate = useNavigate();
+
   const go = path => {
     navigate(path);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({top:0,behavior:'smooth'});
   };
 
-  const openWhatsApp = () =>
-    window.open('https://wa.me/919390642779', '_blank', 'noopener,noreferrer');
+  const whatsapp = () =>
+    window.open('https://wa.me/919390642779','_blank','noopener,noreferrer');
 
   return (
-    <div style={{fontFamily:"Inter,'Segoe UI',Arial,sans-serif",color:C.text,background:C.white,overflowX:'hidden'}}>
+    <main style={{fontFamily:"Inter,'Segoe UI',Arial,sans-serif",color:C.text,overflowX:'hidden'}}>
       <style>{`
-        .card:hover{transform:translateY(-7px)!important;box-shadow:0 18px 40px rgba(7,91,255,.12)!important;border-color:#8BDFFF!important}
-        .btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(7,91,255,.25)}
-        .cat:hover{transform:translateY(-6px)!important;border-color:#00BFFF!important;box-shadow:0 15px 30px rgba(0,140,255,.12)!important}
-        .outline:hover{background:#075BFF!important;color:#fff!important}
+        *{box-sizing:border-box}
+        .card,.cat,.btn{transition:.3s ease}
+        .card:hover{transform:translateY(-7px)!important;box-shadow:0 18px 40px rgba(0,3,91,.13)!important;border-color:#69CFFF!important}
+        .cat:hover{transform:translateY(-6px);border-color:${C.bright}!important;box-shadow:0 15px 35px rgba(0,91,255,.13)}
+        .btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,91,255,.25)}
         @media(max-width:1100px){.courses{grid-template-columns:repeat(2,1fr)!important}.cats{grid-template-columns:repeat(2,1fr)!important}}
-        @media(max-width:900px){.hero{flex-direction:column!important}.heroContent,.heroVisual{max-width:100%!important;width:100%!important}.features,.whyGrid{grid-template-columns:repeat(2,1fr)!important}.demo{grid-template-columns:1fr!important}.testimonials{grid-template-columns:1fr!important}}
-        @media(max-width:600px){.hero{padding:50px 5%!important}.heroTitle{font-size:40px!important}.sectionTitle{font-size:32px!important}.courses,.cats,.features,.whyGrid{grid-template-columns:1fr!important}.heroImage{height:350px!important}.demoImage{height:350px!important}.stats{gap:12px!important}.divider{display:none!important}.bottomStats{grid-template-columns:repeat(2,1fr)!important}}
+        @media(max-width:900px){.hero{flex-direction:column!important}.hero>*{width:100%!important;max-width:100%!important}.features,.why{grid-template-columns:repeat(2,1fr)!important}.demo{grid-template-columns:1fr!important}}
+        @media(max-width:600px){.hero{padding:45px 5%!important}.hero h1{font-size:39px!important}.title{font-size:32px!important}.courses,.cats,.features,.why{grid-template-columns:1fr!important}.heroImg{height:350px!important}.stats{gap:10px!important}.stats div:nth-child(4),.stats div:nth-child(6),.stats div:nth-child(8){display:none}}
       `}</style>
 
       <Header />
@@ -108,197 +118,242 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" style={{
         minHeight:650,padding:'70px 6%',display:'flex',alignItems:'center',
-        gap:60,position:'relative',overflow:'hidden',
-        background:`linear-gradient(120deg,${C.silver},#fff 50%,${C.cyanSoft})`
+        gap:60,position:'relative',background:
+        `linear-gradient(135deg,#EEF5FF 0%,#FFFFFF 45%,#E8F8FF 100%)`
       }}>
-        <div style={{position:'absolute',width:450,height:450,borderRadius:'50%',background:'rgba(0,140,255,.07)',right:-150,top:-130}} />
+        <div style={{position:'absolute',width:500,height:500,borderRadius:'50%',
+          background:'rgba(0,3,91,.05)',right:-180,top:-180}}/>
 
-        <div className="heroContent" style={{flex:1,maxWidth:620,zIndex:2}}>
-          <div style={{
-            display:'inline-block',padding:'9px 17px',borderRadius:30,
-            background:C.white,color:C.blue,fontSize:12,fontWeight:900,
-            letterSpacing:1.2,marginBottom:20,boxShadow:'0 7px 22px rgba(7,91,255,.10)'
+        <div style={{flex:1,maxWidth:620,zIndex:2}}>
+          <span style={{
+            display:'inline-block',background:C.white,color:C.blue,
+            padding:'9px 17px',borderRadius:30,fontSize:12,fontWeight:900,
+            letterSpacing:1.3,boxShadow:'0 8px 25px rgba(0,3,91,.09)'
           }}>
             🎓 LEARN • PRACTICE • BUILD • GROW
-          </div>
+          </span>
 
-          <h1 className="heroTitle" style={{
-            fontFamily:"Georgia,'Times New Roman',serif",fontSize:58,
-            lineHeight:1.04,margin:'0 0 20px',color:C.navy
+          <h1 style={{
+            fontFamily:'Georgia,serif',fontSize:58,lineHeight:1.04,
+            color:C.dark,margin:'22px 0'
           }}>
-            Build Your Future<br />
+            Build Your Future<br/>
             With <span style={{color:C.blue}}>Vighnavi Academy</span>
           </h1>
 
-          <p style={{fontSize:20,lineHeight:1.5,fontWeight:600,color:C.darkBlue,margin:'0 0 12px'}}>
+          <p style={{fontSize:20,lineHeight:1.5,fontWeight:600,color:C.navy}}>
             Industry-focused technical education designed to transform learners into confident, job-ready professionals.
           </p>
 
-          <p style={{fontSize:16,lineHeight:1.7,color:C.muted,maxWidth:590,margin:'0 0 28px'}}>
+          <p style={{fontSize:15,lineHeight:1.7,color:C.muted}}>
             Learn Java, Python, Full Stack Development, MERN Stack, Data Analytics and Generative AI through practical learning, expert mentorship and real-world projects.
           </p>
 
-          <div style={{display:'flex',gap:14,flexWrap:'wrap',marginBottom:32}}>
-            <button className="btn" style={{...button,background:C.blue,color:C.white}} onClick={()=>go('/courses')}>
-              Explore Courses →
-            </button>
-            <button className="btn" style={{...button,background:C.white,color:C.darkBlue,border:`1px solid ${C.gold}`}} onClick={()=>go('/contact')}>
-              Book a Demo ↗
-            </button>
+          <div style={{display:'flex',gap:13,flexWrap:'wrap',margin:'27px 0 32px'}}>
+            <Btn onClick={()=>go('/courses')}>Explore Courses →</Btn>
+            <Btn outline onClick={()=>go('/contact')}>Book a Demo ↗</Btn>
           </div>
 
           <div className="stats" style={{display:'flex',alignItems:'center',gap:18,flexWrap:'wrap'}}>
             {[
               ['5,000+','Learners'],['50+','Expert Mentors'],
               ['8+','Career Courses'],['95%','Career Support']
-            ].map((s,i)=>(
-              <React.Fragment key={s[1]}>
-                {i>0&&<div className="divider" style={{width:1,height:38,background:C.border}}/>}
+            ].map((x,i)=>(
+              <React.Fragment key={x[1]}>
+                {i>0&&<i style={{height:38,width:1,background:C.border}}/>}
                 <div>
-                  <strong style={{display:'block',fontSize:18,color:C.blue}}>{s[0]}</strong>
-                  <span style={{fontSize:12,color:C.muted}}>{s[1]}</span>
+                  <b style={{display:'block',fontSize:18,color:C.blue}}>{x[0]}</b>
+                  <small style={{color:C.muted}}>{x[1]}</small>
                 </div>
               </React.Fragment>
             ))}
           </div>
         </div>
 
-        <div className="heroVisual" style={{flex:1,maxWidth:600,minWidth:300,position:'relative'}}>
-          <div className="heroImage" style={{height:470,borderRadius:32,overflow:'hidden',position:'relative',boxShadow:'0 25px 55px rgba(3,27,87,.20)'}}>
+        <div style={{flex:1,maxWidth:600,minWidth:300,position:'relative'}}>
+          <div className="heroImg" style={{
+            height:470,borderRadius:32,overflow:'hidden',position:'relative',
+            boxShadow:'0 25px 55px rgba(0,3,91,.22)'
+          }}>
             <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=90"
-              alt="Students learning together"
+              alt="Students learning"
               style={{width:'100%',height:'100%',objectFit:'cover'}}
             />
-            <div style={{position:'absolute',inset:0,background:'linear-gradient(0deg,rgba(2,8,23,.82),transparent 60%)'}}/>
+            <div style={{position:'absolute',inset:0,background:'linear-gradient(0deg,rgba(0,3,91,.9),transparent 60%)'}}/>
             <div style={{position:'absolute',bottom:30,left:30,color:C.white}}>
-              <small style={{color:C.cyan,fontWeight:900,letterSpacing:3}}>SKILLS</small>
+              <small style={{color:C.cyan,letterSpacing:3}}>SKILLS</small>
               <strong style={{display:'block',fontSize:27}}>Create Opportunities</strong>
               <span>Your Future Starts Here</span>
             </div>
           </div>
 
-          <div style={{position:'absolute',top:'8%',left:'-5%',padding:'14px 18px',background:C.white,color:C.blue,borderRadius:15,fontSize:14,fontWeight:800,boxShadow:'0 12px 30px rgba(0,50,100,.15)'}}>
+          <div style={{position:'absolute',top:'8%',left:'-5%',padding:'14px 18px',
+            background:C.white,color:C.dark,borderRadius:15,fontWeight:800,
+            boxShadow:'0 12px 30px rgba(0,3,91,.15)'}}>
             💻 Practical Learning
           </div>
-          <div style={{position:'absolute',bottom:'13%',right:'-3%',padding:'14px 18px',background:C.white,color:C.blue,borderRadius:15,fontSize:14,fontWeight:800,boxShadow:'0 12px 30px rgba(0,50,100,.15)'}}>
+
+          <div style={{position:'absolute',bottom:'13%',right:'-3%',padding:'14px 18px',
+            background:C.white,color:C.blue,borderRadius:15,fontWeight:800,
+            boxShadow:'0 12px 30px rgba(0,3,91,.15)'}}>
             🚀 Career Ready
           </div>
         </div>
       </section>
 
-      {/* TRUST */}
-      <section style={{padding:'23px 6%',background:C.navy,color:C.white,display:'flex',justifyContent:'space-around',gap:20,flexWrap:'wrap',fontWeight:700,fontSize:14}}>
-        {['✓ Live Interactive Classes','✓ Industry Experts','✓ Real-World Projects','✓ Certification','✓ Career Guidance'].map(x=><div key={x}>{x}</div>)}
+      {/* TRUST BAR */}
+      <section style={{
+        padding:'23px 6%',background:C.dark,color:C.white,
+        display:'flex',justifyContent:'space-around',gap:20,flexWrap:'wrap',
+        fontSize:14,fontWeight:700
+      }}>
+        {['✓ Live Interactive Classes','✓ Industry Experts','✓ Real-World Projects','✓ Certification','✓ Career Guidance'].map(x=><span key={x}>{x}</span>)}
       </section>
 
       {/* CATEGORIES */}
       <section style={{padding:'80px 6%'}}>
-        <SectionTitle eyebrow="EXPLORE LEARNING" title={<>Explore Top <span style={{color:C.blue}}>Categories</span></>} />
+        <SectionTitle label="EXPLORE LEARNING" title={<>Explore Top <span style={{color:C.blue}}>Categories</span></>}/>
         <div className="cats" style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:18}}>
-          {categories.map(c=>(
-            <div className="cat" key={c[1]} onClick={()=>go('/courses')} style={{
-              padding:26,background:`linear-gradient(145deg,#fff,${C.cyanSoft})`,
-              border:`1px solid ${C.border}`,borderRadius:20,textAlign:'center',
-              cursor:'pointer',transition:'all .3s'
+          {categories.map(x=>(
+            <div className="cat" key={x[1]} onClick={()=>go('/courses')} style={{
+              padding:25,textAlign:'center,borderRadius:20'.replace(',',''),
+              background:`linear-gradient(145deg,#fff,#F0F8FF)`,
+              border:`1px solid ${C.border}`,cursor:'pointer'
             }}>
-              <div style={{width:62,height:62,borderRadius:17,background:C.white,display:'flex',alignItems:'center',justifyContent:'center',fontSize:30,margin:'0 auto 14px',boxShadow:'0 6px 18px rgba(0,90,180,.08)'}}>{c[0]}</div>
-              <h3 style={{fontSize:17,margin:'0 0 5px',color:C.darkBlue}}>{c[1]}</h3>
-              <p style={{margin:'0 0 10px',fontSize:13,color:C.muted}}>{c[2]}</p>
-              <span style={{fontSize:12,color:C.blue,fontWeight:800}}>Explore →</span>
+              <div style={{width:62,height:62,borderRadius:17,background:C.light,
+                display:'flex',alignItems:'center',justifyContent:'center',
+                fontSize:29,margin:'0 auto 14px'}}>{x[0]}</div>
+              <h3 style={{margin:'0 0 5px',color:C.dark,fontSize:17}}>{x[1]}</h3>
+              <p style={{margin:'0 0 10px',color:C.muted,fontSize:13}}>{x[2]}</p>
+              <b style={{fontSize:12,color:C.blue}}>Explore →</b>
             </div>
           ))}
         </div>
       </section>
 
       {/* FEATURES */}
-      <section style={{padding:'80px 6%',background:C.silver}}>
-        <SectionTitle eyebrow="WHY VIGHNAVI ACADEMY" title={<>Learn Skills That <span style={{color:C.blue}}>Matter</span></>} subtitle="A practical learning experience focused on confidence, skills and career growth." />
+      <section style={{padding:'80px 6%',background:C.light}}>
+        <SectionTitle
+          label="WHY VIGHNAVI ACADEMY"
+          title={<>Learn Skills That <span style={{color:C.blue}}>Matter</span></>}
+          sub="A practical learning experience focused on confidence, skills and career growth."
+        />
+
         <div className="features" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:20}}>
-          {features.map(f=>(
-            <div className="card" key={f[1]} style={{
-              padding:28,background:C.white,border:`1px solid ${C.border}`,borderRadius:20,
-              textAlign:'center',transition:'all .3s'
+          {features.map(x=>(
+            <div className="card" key={x[1]} style={{
+              padding:28,textAlign:'center',background:C.white,
+              border:`1px solid ${C.border}`,borderRadius:20
             }}>
-              <div style={{width:62,height:62,borderRadius:17,background:C.cyanSoft,display:'flex',alignItems:'center',justifyContent:'center',fontSize:29,margin:'0 auto 16px'}}>{f[0]}</div>
-              <h3 style={{fontSize:18,color:C.darkBlue,margin:'0 0 9px'}}>{f[1]}</h3>
-              <p style={{fontSize:14,lineHeight:1.6,color:C.muted,margin:0}}>{f[2]}</p>
+              <div style={{width:62,height:62,borderRadius:17,background:'#EAF7FF',
+                display:'flex',alignItems:'center',justifyContent:'center',
+                fontSize:29,margin:'0 auto 16px'}}>{x[0]}</div>
+              <h3 style={{fontSize:18,color:C.dark,margin:'0 0 9px'}}>{x[1]}</h3>
+              <p style={{fontSize:13,lineHeight:1.6,color:C.muted,margin:0}}>{x[2]}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* WHY CHOOSE */}
       <section style={{padding:'80px 6%',background:C.white}}>
-        <SectionTitle eyebrow="WHY CHOOSE US" title={<>Why Choose <span style={{color:C.blue}}>Vighnavi Academy?</span></>} subtitle="More than just courses — we focus on practical skills, mentorship and career-ready learning." />
+        <SectionTitle
+          label="WHY CHOOSE US"
+          title={<>Why Choose <span style={{color:C.blue}}>Vighnavi Academy?</span></>}
+          sub="More than just courses — we focus on practical skills, mentorship and career-ready learning."
+        />
 
-        <div style={{maxWidth:1000,margin:'0 auto 32px',padding:25,borderRadius:20,background:`linear-gradient(135deg,${C.navy},${C.royal})`,color:C.white,display:'flex',gap:20,alignItems:'center'}}>
-          <div style={{fontSize:35}}>⭐</div>
+        <div style={{
+          maxWidth:1000,margin:'0 auto 35px',padding:25,borderRadius:22,
+          background:`linear-gradient(135deg,${C.dark},#071A8A,${C.blue})`,
+          color:C.white,display:'flex',alignItems:'center',gap:20,
+          boxShadow:'0 18px 40px rgba(0,3,91,.18)'
+        }}>
+          <span style={{fontSize:36}}>⭐</span>
           <div>
-            <h3 style={{margin:'0 0 6px',fontSize:21}}>Your Learning. Your Skills. Your Career.</h3>
-            <p style={{margin:0,lineHeight:1.6,color:'#DDEAFF',fontSize:14}}>
-              We provide a structured learning environment where students learn technologies, practice concepts, build projects and prepare for real-world opportunities.
+            <h3 style={{margin:'0 0 7px',fontSize:21}}>Your Learning. Your Skills. Your Career.</h3>
+            <p style={{margin:0,color:'#DDE8FF',fontSize:13,lineHeight:1.6}}>
+              Learn technologies, practice concepts, build projects and prepare for real-world opportunities.
             </p>
           </div>
         </div>
 
-        <div className="whyGrid" style={{maxWidth:1100,margin:'auto',display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:20}}>
-          {whyChooseUs.map((w,i)=>(
-            <div className="card" key={w[1]} style={{
-              padding:25,minHeight:165,position:'relative',display:'flex',gap:15,
-              background:C.silver,border:`1px solid ${C.border}`,borderRadius:20,transition:'all .3s'
+        <div className="why" style={{maxWidth:1100,margin:'auto',display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:20}}>
+          {why.map((x,i)=>(
+            <div className="card" key={x[1]} style={{
+              padding:25,minHeight:165,position:'relative',display:'flex',
+              gap:15;background:C.light,border:`1px solid ${C.border}`,borderRadius:20
             }}>
-              <div style={{minWidth:55,width:55,height:55,borderRadius:15,background:C.white,display:'flex',alignItems:'center',justifyContent:'center',fontSize:26}}>{w[0]}</div>
+              <div style={{minWidth:55,height:55,borderRadius:15,background:C.white,
+                display:'flex',alignItems:'center',justifyContent:'center',fontSize:25}}>{x[0]}</div>
               <div>
-                <h3 style={{margin:'2px 0 8px',fontSize:17,color:C.darkBlue}}>{w[1]}</h3>
-                <p style={{margin:0,fontSize:13,lineHeight:1.6,color:C.muted}}>{w[2]}</p>
+                <h3 style={{margin:'2px 0 8px',fontSize:17,color:C.dark}}>{x[1]}</h3>
+                <p style={{margin:0,fontSize:13,lineHeight:1.6,color:C.muted}}>{x[2]}</p>
               </div>
-              <b style={{position:'absolute',right:14,bottom:-8,fontSize:55,color:'rgba(7,91,255,.06)'}}>0{i+1}</b>
+              <b style={{position:'absolute',right:12,bottom:-8,fontSize:55,color:'rgba(0,3,91,.06)'}}>0{i+1}</b>
             </div>
           ))}
         </div>
 
-        <div className="bottomStats" style={{maxWidth:1000,margin:'35px auto 0',display:'grid',gridTemplateColumns:'repeat(4,1fr)',background:C.navy,borderRadius:18,padding:20}}>
+        <div style={{
+          maxWidth:1000,margin:'35px auto 0',display:'grid',
+          gridTemplateColumns:'repeat(4,1fr)',background:C.dark,
+          borderRadius:18,padding:20
+        }}>
           {[['100%','Practical Approach'],['24/7','Learning Resources'],['100+','Practice Opportunities'],['1:1','Mentor Guidance']].map(x=>(
-            <div key={x[1]} style={{textAlign:'center',color:C.white,borderRight:`1px solid rgba(255,255,255,.15)`}}>
-              <strong style={{display:'block',color:C.cyan,fontSize:20}}>{x[0]}</strong>
-              <span style={{fontSize:12}}>{x[1]}</span>
+            <div key={x[1]} style={{textAlign:'center',color:C.white}}>
+              <b style={{display:'block',fontSize:20,color:C.cyan}}>{x[0]}</b>
+              <small>{x[1]}</small>
             </div>
           ))}
         </div>
       </section>
 
       {/* COURSES */}
-      <section style={{padding:'80px 6%',background:C.bg}}>
-        <div style={{display:'flex',justifyContent:'space-between',alignItems:'end',gap:20,flexWrap:'wrap',marginBottom:38}}>
+      <section style={{padding:'80px 6%',background:'#F7FAFF'}}>
+        <div style={{display:'flex',justifyContent:'space-between',alignItems:'end',
+          flexWrap:'wrap',gap:20,marginBottom:38}}>
           <div>
-            <small style={{color:C.blue,fontWeight:900,letterSpacing:3}}>OUR PROGRAMS</small>
-            <h2 className="sectionTitle" style={{fontFamily:"Georgia,'Times New Roman',serif",fontSize:43,color:C.navy,margin:'8px 0'}}>Build Skills. <span style={{color:C.blue}}>Build Your Career.</span></h2>
+            <small style={{color:C.blue,letterSpacing:3,fontWeight:900}}>OUR PROGRAMS</small>
+            <h2 className="title" style={{color:C.dark,fontFamily:'Georgia,serif',margin:'8px 0'}}>
+              Build Skills. <span style={{color:C.blue}}>Build Your Career.</span>
+            </h2>
             <p style={{color:C.muted,margin:0}}>Explore our industry-focused technical courses.</p>
           </div>
-          <button className="outline" style={{...button,background:C.white,color:C.blue,border:`1px solid ${C.blue}`}} onClick={()=>go('/courses')}>View All Courses →</button>
+          <Btn outline onClick={()=>go('/courses')}>View All Courses →</Btn>
         </div>
 
         <div className="courses" style={{display:'grid',gridTemplateColumns:'repeat(4,1fr)',gap:22}}>
-          {courses.map((c,i)=>(
-            <div className="card" key={c[0]} style={{background:C.white,border:`1px solid ${C.border}`,borderRadius:20,overflow:'hidden',transition:'all .3s'}}>
-              <div style={{height:185,position:'relative',overflow:'hidden'}}>
-                <img src={c[1]} alt={c[0]} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
-                <div style={{position:'absolute',inset:0,background:'linear-gradient(0deg,rgba(2,8,23,.72),transparent 65%)'}}/>
-                <span style={{position:'absolute',top:14,left:14,padding:'6px 11px',borderRadius:20,background:i%2?C.blue:C.gold,color:C.white,fontSize:10,fontWeight:900}}>{c[2]}</span>
-                <div style={{position:'absolute',bottom:14,left:16,color:C.white,fontSize:10,letterSpacing:2,fontWeight:800}}>VIGHNAVI ACADEMY</div>
+          {courses.map((x,i)=>(
+            <div className="card" key={x[0]} style={{
+              background:C.white,border:`1px solid ${C.border}`,
+              borderRadius:20,overflow:'hidden'
+            }}>
+              <div style={{height:185,position:'relative'}}>
+                <img src={x[1]} alt={x[0]} style={{width:'100%',height:'100%',objectFit:'cover'}}/>
+                <div style={{position:'absolute',inset:0,background:'linear-gradient(0deg,rgba(0,3,91,.8),transparent 65%)'}}/>
+                <span style={{
+                  position:'absolute',top:13,left:13,padding:'6px 11px',
+                  borderRadius:20,background:i%2?C.blue:C.gold,color:C.white,
+                  fontSize:10,fontWeight:900
+                }}>{x[2]}</span>
+                <b style={{position:'absolute',bottom:13,left:15,color:C.white,fontSize:10,letterSpacing:2}}>VIGHNAVI ACADEMY</b>
               </div>
 
               <div style={{padding:19}}>
-                <div style={{color:C.gold,fontSize:12,fontWeight:800,marginBottom:8}}>⭐ 4.9 <span style={{color:C.muted}}>(1,500+ learners)</span></div>
-                <h3 style={{fontFamily:"Georgia,'Times New Roman',serif",fontSize:20,color:C.darkBlue,margin:'0 0 8px'}}>{c[0]}</h3>
-                <p style={{fontSize:13,lineHeight:1.55,color:C.muted,minHeight:60,margin:'0 0 13px'}}>{c[3]}</p>
+                <small style={{color:C.gold,fontWeight:800}}>⭐ 4.9 <span style={{color:C.muted}}>(1,500+ learners)</span></small>
+                <h3 style={{fontFamily:'Georgia,serif',fontSize:20,color:C.dark,margin:'8px 0'}}>{x[0]}</h3>
+                <p style={{fontSize:13,lineHeight:1.55,color:C.muted,minHeight:58}}>{x[3]}</p>
 
-                <div style={{padding:12,borderRadius:11,background:C.silver,display:'flex',flexDirection:'column',gap:5,marginBottom:15}}>
-                  {c[4].map(s=><span key={s} style={{fontSize:11,color:C.darkBlue}}>✓ {s}</span>)}
+                <div style={{padding:12,borderRadius:11,background:C.light,display:'grid',gap:5,marginBottom:15}}>
+                  {x[4].map(s=><span key={s} style={{fontSize:11,color:C.dark}}>✓ {s}</span>)}
                 </div>
 
-                <button className="btn" style={{...button,width:'100%',padding:'11px 15px',background:C.blue,color:C.white}} onClick={()=>go('/courses')}>
+                <button className="btn" onClick={()=>go('/courses')} style={{
+                  width:'100%',border:0,borderRadius:24,padding:11,
+                  background:C.blue,color:C.white,fontWeight:800,cursor:'pointer'
+                }}>
                   View Details →
                 </button>
               </div>
@@ -308,94 +363,97 @@ export default function Home() {
       </section>
 
       {/* DEMO */}
-      <section className="demo" style={{padding:'80px 6%',display:'grid',gridTemplateColumns:'1fr 1fr',gap:55,alignItems:'center'}}>
-        <div className="demoImage" style={{height:490,borderRadius:28,overflow:'hidden',position:'relative',boxShadow:'0 20px 50px rgba(3,27,87,.15)'}}>
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1100&q=90" alt="Students learning" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
-          <div style={{position:'absolute',inset:0,background:'linear-gradient(0deg,rgba(2,8,23,.8),transparent 65%)'}}/>
+      <section className="demo" style={{
+        padding:'80px 6%',display:'grid',gridTemplateColumns:'1fr 1fr',
+        gap:55,alignItems:'center'
+      }}>
+        <div style={{
+          height:480,borderRadius:28,overflow:'hidden',position:'relative',
+          boxShadow:'0 22px 50px rgba(0,3,91,.17)'
+        }}>
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1100&q=90"
+            alt="Students learning" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
+          <div style={{position:'absolute',inset:0,background:'linear-gradient(0deg,rgba(0,3,91,.88),transparent 65%)'}}/>
           <div style={{position:'absolute',bottom:30,left:30,color:C.white}}>
-            <span style={{display:'block',fontSize:48,color:C.cyan}}>“</span>
-            <strong style={{fontSize:27}}>Learn Today.<br/>Lead Tomorrow.</strong>
+            <span style={{fontSize:45,color:C.cyan}}>“</span>
+            <strong style={{display:'block',fontSize:27}}>Learn Today.<br/>Lead Tomorrow.</strong>
           </div>
         </div>
 
         <div>
-          <small style={{color:C.blue,fontWeight:900,letterSpacing:3}}>START YOUR JOURNEY</small>
-          <h2 className="sectionTitle" style={{fontFamily:"Georgia,'Times New Roman',serif",fontSize:43,color:C.navy,margin:'10px 0 18px'}}>Experience Our <span style={{color:C.blue}}>Learning Style</span></h2>
-          <p style={{color:C.muted,fontSize:16,lineHeight:1.7}}>
-            Join a demo class and understand our teaching approach before choosing your learning path. Meet the trainer, explore the curriculum and ask your questions.
+          <small style={{color:C.blue,letterSpacing:3,fontWeight:900}}>START YOUR JOURNEY</small>
+          <h2 className="title" style={{color:C.dark,fontFamily:'Georgia,serif'}}>
+            Experience Our <span style={{color:C.blue}}>Learning Style</span>
+          </h2>
+          <p style={{color:C.muted,lineHeight:1.7}}>
+            Join a demo class and understand our teaching approach before choosing your learning path.
           </p>
 
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:12,margin:'22px 0'}}>
-            {['Meet the Trainer','Understand Course Structure','Experience Practical Teaching','Ask Your Questions'].map(x=><div key={x} style={{fontSize:13,fontWeight:700,color:C.darkBlue}}>✓ {x}</div>)}
+            {['Meet the Trainer','Course Structure','Practical Teaching','Ask Questions'].map(x=>
+              <b key={x} style={{fontSize:13,color:C.dark}}>✓ {x}</b>
+            )}
           </div>
 
-          <div style={{padding:15,background:C.goldLight,borderLeft:`4px solid ${C.gold}`,borderRadius:8,marginBottom:20}}>
-            <strong style={{color:C.darkBlue}}>Demo Class Confirmation</strong>
+          <div style={{padding:15,background:'#FFF7E5',borderLeft:`4px solid ${C.gold}`,borderRadius:8,marginBottom:20}}>
+            <b>Demo Class Confirmation</b>
             <p style={{fontSize:12,color:C.muted,margin:'5px 0 0'}}>Demo class confirmation fees, if applicable, will be discussed separately.</p>
           </div>
 
-          <button className="btn" style={{...button,background:C.blue,color:C.white}} onClick={()=>go('/contact')}>Schedule Demo Class →</button>
+          <Btn onClick={()=>go('/contact')}>Schedule Demo Class →</Btn>
         </div>
       </section>
 
       {/* TESTIMONIALS */}
-      <section style={{padding:'80px 6%',background:C.silver,textAlign:'center'}}>
-        <SectionTitle eyebrow="LEARNER STORIES" title={<>What Our <span style={{color:C.blue}}>Learners Say</span></>} subtitle="Real learning experiences from our growing community." />
-
-        <div className="testimonials" style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:22,textAlign:'left'}}>
-          {testimonials.map(t=>(
-            <div className="card" key={t[0]} style={{background:C.white,border:`1px solid ${C.border}`,borderRadius:20,padding:27,transition:'all .3s'}}>
-              <div style={{fontSize:45,color:C.gold,fontFamily:'Georgia',lineHeight:.7}}>“</div>
-              <div style={{color:C.gold,letterSpacing:3,margin:'10px 0'}}>★★★★★</div>
-              <p style={{fontSize:14,lineHeight:1.7,color:C.muted,minHeight:90}}>{t[2]}</p>
-              <div style={{borderTop:`1px solid ${C.border}`,paddingTop:15}}>
-                <strong style={{display:'block',color:C.darkBlue}}>{t[0]}</strong>
-                <span style={{fontSize:12,color:C.muted}}>{t[1]}</span>
+      <section style={{padding:'80px 6%',background:C.light,textAlign:'center'}}>
+        <SectionTitle label="LEARNER STORIES" title={<>What Our <span style={{color:C.blue}}>Learners Say</span></>}/>
+        <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:22}} className="features">
+          {testimonials.map(x=>(
+            <div className="card" key={x[0]} style={{
+              background:C.white,border:`1px solid ${C.border}`,
+              borderRadius:20,padding:27,textAlign:'left'
+            }}>
+              <div style={{fontSize:42,color:C.gold}}>“</div>
+              <div style={{color:C.gold,letterSpacing:3}}>★★★★★</div>
+              <p style={{color:C.muted,lineHeight:1.7,minHeight:85}}>{x[2]}</p>
+              <div style={{borderTop:`1px solid ${C.border}`,paddingTop:14}}>
+                <b style={{display:'block',color:C.dark}}>{x[0]}</b>
+                <small style={{color:C.muted}}>{x[1]}</small>
               </div>
             </div>
           ))}
         </div>
-
-        <button className="outline" style={{...button,marginTop:32,background:C.white,color:C.blue,border:`1px solid ${C.blue}`}} onClick={()=>go('/contact')}>
-          Read More Success Stories →
-        </button>
       </section>
 
       {/* FINAL CTA */}
-      <section style={{padding:'85px 6%',background:`linear-gradient(125deg,${C.navy},${C.royal},${C.blue})`,color:C.white,textAlign:'center'}}>
+      <section style={{
+        padding:'85px 6%',textAlign:'center',color:C.white,
+        background:`linear-gradient(125deg,${C.dark},#071A8A,${C.blue})`
+      }}>
         <small style={{color:C.cyan,letterSpacing:3,fontWeight:900}}>YOUR FUTURE STARTS HERE</small>
-        <h2 style={{fontFamily:"Georgia,'Times New Roman',serif",fontSize:46,margin:'12px 0'}}>Ready to Learn, Build & <span style={{color:C.cyan}}>Grow?</span></h2>
-        <p style={{color:'#DDEAFF',fontSize:17,marginBottom:28}}>Take the first step toward a stronger technical career with Vighnavi Academy.</p>
-        <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap'}}>
-          <button className="btn" style={{...button,background:C.gold,color:C.navy}} onClick={()=>go('/courses')}>Explore Courses →</button>
-          <button className="btn" style={{...button,background:'transparent',color:C.white,border:'1px solid rgba(255,255,255,.7)'}} onClick={()=>go('/contact')}>Contact Our Team</button>
+        <h2 style={{fontFamily:'Georgia,serif',fontSize:46,margin:'12px 0'}}>
+          Ready to Learn, Build & <span style={{color:C.cyan}}>Grow?</span>
+        </h2>
+        <p style={{color:'#DCE7FF',fontSize:16}}>Take the first step toward a stronger technical career with Vighnavi Academy.</p>
+
+        <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap',marginTop:25}}>
+          <button className="btn" style={{...Btn,background:C.gold,color:C.dark}} onClick={()=>go('/courses')}>
+            Explore Courses →
+          </button>
+          <button className="btn" style={{...Btn,background:'transparent',color:C.white,border:'1px solid #fff'}} onClick={()=>go('/contact')}>
+            Contact Our Team
+          </button>
         </div>
       </section>
 
       {/* WHATSAPP */}
-      <button
-        onClick={openWhatsApp}
-        aria-label="Chat with Vighnavi Academy on WhatsApp"
-        style={{
-          position:'fixed',right:24,bottom:24,width:60,height:60,borderRadius:'50%',
-          border:'none',background:'#25D366',color:C.white,fontSize:27,cursor:'pointer',
-          zIndex:9999,boxShadow:'0 8px 25px rgba(37,211,102,.4)'
-        }}
-      >
-        📞
-      </button>
+      <button onClick={whatsapp} aria-label="WhatsApp" style={{
+        position:'fixed',right:24,bottom:24,width:60,height:60,border:0,
+        borderRadius:'50%',background:'#25D366',color:C.white,fontSize:27,
+        cursor:'pointer',zIndex:9999,boxShadow:'0 8px 25px rgba(37,211,102,.4)'
+      }}>📞</button>
 
       <Footer />
-    </div>
-  );
-}
-
-function SectionTitle({eyebrow,title,subtitle}) {
-  return (
-    <div style={{textAlign:'center',maxWidth:850,margin:'0 auto 42px'}}>
-      <small style={{color:C.blue,letterSpacing:3,fontSize:11,fontWeight:900}}>{eyebrow}</small>
-      <h2 className="sectionTitle" style={{fontFamily:"Georgia,'Times New Roman',serif",fontSize:43,lineHeight:1.15,color:C.navy,margin:'9px 0 10px'}}>{title}</h2>
-      {subtitle && <p style={{color:C.muted,fontSize:15,lineHeight:1.6,margin:0}}>{subtitle}</p>}
-    </div>
+    </main>
   );
 }
