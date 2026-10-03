@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logovighnaviacademy.png';
+import logo from '../assets/logovighnavi.png';
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
