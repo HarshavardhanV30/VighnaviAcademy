@@ -3072,7 +3072,7 @@ const courses = [
 },
   {
   title: "Artificial Intelligence & Generative AI",
-  image: generativeAI,
+  image: genaiLogo,
   category: "Artificial Intelligence",
   level: "Beginner to Advanced",
   duration: "5 - 6 Months",
